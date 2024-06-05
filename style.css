@@ -1,0 +1,125 @@
+body {
+    font-family: "Sono", sans-serif; 
+    background-image: url(./assets/images/background.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .pricing-container{ 
+    min-height: 40vh;       
+    display: flex;
+    flex-direction: row;        
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;       
+  }
+  
+  .pricing-plan{
+    background-color: rgb(230, 234, 233);
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 0 0 1;
+    border-radius: 0.33rem;
+  }
+
+  .plan-title{
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .plan-price{
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  
+  .plan-features {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .plan-features > li:not(:last-of-type){
+    margin-bottom: 10px;
+  }
+
+  button{
+    border: none;
+    color: white;
+    background-color: rgb(240, 88, 33);
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-container{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;    
+  }
+
+  a{
+    font-size: 1.4rem;
+    color: azure;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+  .text-description{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .description-title{
+    color: rgb(234, 228, 228);
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2.5rem;
+  }
+
+  span{
+    color: aqua;    
+  }
+
+  .paragraph-text{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 900px;    
+  }
+  footer{
+    color: white;
+    text-align: end;    
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 19rem;
+  }
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    .pricing-container{                 
+      display: flex;
+      flex-direction: column;        
+      gap: 20px; 
+      justify-content: center;
+      align-items: center;
+    }
+    .pricing-plan{
+    background-color: rgb(230, 234, 233);
+    flex-basis: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 0 0 1;  
+    }   
+   
+   }
+  
+  
